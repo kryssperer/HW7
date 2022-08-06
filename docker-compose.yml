@@ -5,7 +5,7 @@ services:
     build:
       context: builder/
     volumes:
-      - app:/tmp/app
+      - ./app:/tmp/app
 
 #  production:
 #    build:
