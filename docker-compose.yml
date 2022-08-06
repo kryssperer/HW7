@@ -7,13 +7,13 @@ services:
     volumes:
       - app:/tmp/app
 
-#  production:
-#    build:
-#      context: production/
-#    ports:
-#      - "80:8080"
-#    volumes:
-#      - app:/opt/apache-tomcat-10.0.23/webapps
+  production:
+    build:
+      context: production/
+    ports:
+      - "80:8080"
+    volumes:
+      - app:/opt/apache-tomcat-10.0.23/webapps
 
 volumes:
   app:
