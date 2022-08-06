@@ -15,5 +15,5 @@ services:
 #    volumes:
 #      - app:/opt/apache-tomcat-10.0.23/webapps
 
-volumes:
-  app:
+#volumes:
+#  app:
