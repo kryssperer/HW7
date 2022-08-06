@@ -5,7 +5,7 @@ services:
     build:
       context: builder/
     volumes:
-      - ./app:/tmp/app
+      - app:/tmp/app
 
 #  production:
 #    build:
@@ -15,5 +15,5 @@ services:
 #    volumes:
 #      - app:/opt/apache-tomcat-10.0.23/webapps
 
-#volumes:
-#  app:
+volumes:
+  app:
