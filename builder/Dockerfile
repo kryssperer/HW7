@@ -6,4 +6,4 @@ COPY pom.xml .
 COPY src .
 RUN pwd
 RUN mvn clean package
-RUN cp /tmp/app/target/hello-1.0.war /tmp/app
+RUN cp target/hello-1.0.war /tmp/app
