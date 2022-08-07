@@ -1,5 +1,5 @@
 ---
-version: "3.9"
+version: "3.7"
 services:
   builder:
     build:
@@ -14,7 +14,7 @@ services:
       - "80:8080"
     volumes:
       - app:/opt/apache-tomcat-10.0.23/webapps
-    depends_on:
+#    depends_on:
       - builder
 
 volumes:
