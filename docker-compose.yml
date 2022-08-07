@@ -12,8 +12,8 @@ services:
       context: production/
     ports:
       - "80:8080"
-#    volumes:
-#      - app:/opt/apache-tomcat-10.0.23/webapps
+    volumes:
+      - app:/opt/apache-tomcat-10.0.23/webapps
     depends_on:
       - builder
 
