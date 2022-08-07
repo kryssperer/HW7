@@ -8,3 +8,4 @@ RUN pwd
 RUN mvn clean package
 WORKDIR /
 RUN cp /tmp/app/target/hello-1.0.war /tmp/app
+RUN cp -R /tmp/app/target/hello-1.0 /tmp/app
