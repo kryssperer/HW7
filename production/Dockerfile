@@ -6,7 +6,9 @@ RUN wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.23/bin/apache-tomcat-10
 	rm apache-tomcat-10.0.23.tar.gz
 #COPY hello-1.0.war apache-tomcat-10.0.23/webapps
 #COPY hello-1.0 apache-tomcat-10.0.23/webapps
+WORKDIR /
 RUN cp /opt/app/hello-1.0.war /opt/apache-tomcat-10.0.23/webapps
 RUN cp -R /opt/app/hello-1.0 /opt/apache-tomcat-10.0.23/webapps
+WORKDIR /opt
 EXPOSE 8080
 CMD ["/opt/apache-tomcat-10.0.23/bin/catalina.sh", "run"]
